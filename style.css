@@ -1,3 +1,53 @@
+body {
+	background: #16a085;
+}
 .card-placeholder {
 	background: red;
+}
+#board {
+	background: #27ae60;
+	padding: 5px;
+}
+.column {
+	background: blue;
+	float: left;
+	width : 300px;
+	height: auto;
+	margin :20px 20px;
+	padding: 10px 10px;
+	border: 1px solid black;
+}
+.column-title {
+	color: #f1c40f;
+	text-align: center;
+}
+.card {
+	color: black;
+	width: 200px;
+	height: auto;
+	background: #2ecc71;
+	margin-bottom: 10px;
+}
+.card .card-description {
+	padding: 10px;
+	box-sizing: border-box;
+}
+.add-card {
+	background: #f1c40f;
+}
+.board h1 {
+	text-align: center;
+	color: yellow;
+	margin: 20px 20px;
+}
+.create-column {
+	background: #f1c40f;
+	margin: 20px auto;
+	display: block;
+}
+.card .btn-delete {
+	float: right;
+}
+ul {
+	list-style-type: none;
 }

@@ -7,6 +7,16 @@ $(function() {
         }
         return str;
     }
+
+    var board = {
+        name: 'Kanban Board',
+        addColumn: function(column) {
+          this.$element.append(column.$element);
+          initSortable();
+        },
+        $element: $('#board .column-container')
+    };
+
     function Column(name) {
         var self = this; // useful for nested functions
 
@@ -49,7 +59,6 @@ $(function() {
         }
     };
 
-    
     function Card(description) {
         var self = this;
 
@@ -80,14 +89,7 @@ $(function() {
                 }
         }
     };
-    var board = {
-        name: 'Kanban Board',
-        addColumn: function(column) {
-          this.$element.append(column.$element);
-          initSortable();
-        },
-        $element: $('#board .column-container')
-    };
+
     function initSortable() {
         $('.column-card-list').sortable({
           connectWith: '.column-card-list',
